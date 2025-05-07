@@ -1,0 +1,193 @@
+<<!DOCTYPE html>  <!--dichiara il tipo di documento html-->
+<html lang="it"> <!--Indica che il documento è in italiano-->
+    <head> <!--inizio della sezione head(intestazione non visibiole della pagina)-->
+        <meta charset="utf-8"> <!-- Imposta la codifica dei caratteri per supportare lettere accentate-->
+        <title> La mia prima pagina </title> <!-- Titolo che appare nella scheda del browser-->
+
+        <style> /*inizio dello stile css interno alla pagina*/
+            /*STILE GENERALE DEL CORPO DELLA PAGINA*/
+          body {
+            font-family: 'Times New Roman', Times, serif ; /*tipo di carattere*/
+            background-color: rgb(43, 43, 43); /*colore di sfondo*/
+            color: rgb(172, 172, 172); /*colore del testo*/
+            margin: 20px; /*spazio attorno alla pagina*/
+          }
+            /*INTESTAZIONE DELLA PAGINA */
+          header {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: rgb(197, 197, 197);   /*colore di sfondo dell'intestazione*/
+            color: rgb(55, 55, 55);  /*colore del testo nell'intestazione*/
+            padding: 20px;  /*spaziatura interna*/
+            text-align: center; /*centra il contenuto*/
+            border-radius: 10px; /*angoli arrotondati*/
+          }
+            /*SEZIONI DEL CONTENUTO*/
+          section{
+                margin-top: 20px;   /*spazio sopra ogni sezione*/
+          }
+            /*IMMAGINI NELLA PAGINA*/
+          img {
+                width: 200px;   /*largezza fissa*/
+                border-radius: 10px;/*angoli arrotondati*/
+          }
+            /*STILE PER IL MODULO*/
+          form {
+            margin-top: 20px;
+            background-color: rgb(77, 77, 77);  /*colore di sfondo del modulo*/
+            padding: 15px;   /*spaziatura interna*/
+            border-radius: 10px;
+          } 
+           /*STILE PER I CAMPI DI TESTO E EMAIL*/
+          input[type="text"], input[type="email"] {
+            width: 100%;  /*larghezza al 100% del contenitore*/
+            padding: 8px;  /*spaziatura interna*/
+            margin-top: 10px; /*spazio inferiore tra i campi*/
+            text-align: center;
+          }
+           /*STILE PER IL PULSANTE DI INVIO*/
+          input[type="submit"] {
+            background-color: rgb(252, 252, 252); /*colore di sfondo del pulsante*/
+            color: black;  /*colore del testo*/
+            border: none;   /*nessun bordo*/
+            padding: 10px 20px; /*spaziatura interna*/
+            border-radius: 5px; /*angoli arrotondati*/
+            cursor: pointer;  /*cambia il cursore al passaggio*/
+          }
+           /*STILE PER LA TABELLA*/
+           table {
+            width: 100%;  /*larghezza piena*/
+            border-collapse: collapse;  /*unisce i bordi delle celle*/
+            margin-top: 10px;   /*spazio sopra la tabella*/
+           }
+           /*STILE PER LE CELLE DELLA TABELLA*/
+           th{
+            background-color: #a8a8a8;
+            border: 1px solid #9c9c9c;   /*bordi delle celle*/
+            padding: 8px;     /*spaziatura interna*/
+            text-align: center; /*centra il test*/
+           }
+           td {
+            background-color: #707070;
+            border: 1px solid #575757;   /*bordi delle celle*/
+            padding: 8px;     /*spaziatura interna*/
+            text-align: center; /*centra il test*/
+           }
+           /*STILE PER LE INTESTAZIONI DELLA TABELLA*/
+           th {
+            background-color: rgb(223, 224, 224);  /*sfondo delle celle*/
+            color: #484848;  /*colore testo*/
+           }
+        </style>
+        <!--fine dello stile css-->
+           
+
+
+    </head>
+    <body> <!--inizio del corpo visibile della pagina-->
+        <header>
+            <h1>BENVENUTO NEL MIO SITO!</h1> <!--Titolo principale-->
+            <p>Questa è una pagina HTML con stile CSS di base</p>  <!--descrizione sotto il titolo-->
+        </header>
+        <!--fine dell'intestazione-->
+        <section> <!--inizio sezione "chi sono"-->
+            <h2>Chi sono</h2> <!--titolo della sezione-->
+            <p>Mi chiamo Gaia Visetti e dormo veramente poco.</p> <!--testo descrittivo-->
+            <!--immagine con testo alternativo se non viene caricata-->
+            <img src="https://www.baschierirenato.shop/wp-content/uploads/2023/05/HB-PURE.jpg" alt="Foto da internet" width="400">
+            <!--collegamento cliccabile verso Github-->
+            <p>Visita il mio <a href="https://github.com" target="_blank">Github</a>.</p>
+        </section>
+            <!--fine sezione "Chi sono"-->
+
+            <!--inizio sezione con lista di hobby-->
+        <section>
+            <h2>I miei hobby</h2> <!--Titolo della sezione-->
+            <p>Ecco alcune delle cose che mi piace fare nel tempo libero:</p> <!--introduzione della lista-->
+
+            <!--Inizio della lista ordinata-->
+            <ul>
+                <li>Programmare</li>
+                <li>Leggere libri</li>
+                <li>Ascoltare musica</li>
+                <li>lavorare</li>
+            </ul>
+            <!--fine lista rdinata-->
+        </section>
+        <!---inizio sezione tabella con orari-->
+        <section>
+            <h2>Orari settimanali di Gaia</h2> <!--titolo della sezione-->
+            <p>Questa è una tabella con i miei impegni settimanali: </p> <!--introduzione-->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Giorno</th>    <!--intestazione colonna giorno-->
+                        <th>Mattina</th>    <!--intestazione colonna mattina-->
+                        <th>Pomeriggio</th> <!--intestazione colonna pomeriggio-->
+                        <th>Sera</th>       <!--intestazione colonna sera-->
+                    </tr>
+                </thead>
+            <!--corpo della tabella-->
+            <tbody>
+                <tr>
+                    <td>Lunedì</td>
+                    <td>9:00 - 13:00</td>
+                    <td>14:00 - 17:00</td>
+                    <td>18:00 - 00:00</td>
+                </tr>
+                <tr>
+                    <td>Martedì</td>
+                    <td>9:00 - 13:00</td>
+                    <td>14:00 - 17:00</td>
+                    <td>18:00 - 00:00</td>
+                </tr>
+                <tr>
+                    <td>Mercoledì</td>
+                    <td>9:00 - 13:00</td>
+                    <td>14:00 - 17:00</td>
+                    <td>18:00 - 00:00</td>
+                </tr>
+                <tr>
+                    <td>Giovedì</td>
+                    <td>9:00 - 13:00</td>
+                    <td>14:00 - 17:00</td>
+                    <td>18:00 - 00:00</td>
+                </tr>
+                <tr>
+                    <td>Venerdì</td>
+                    <td>9:00 - 13:00</td>
+                    <td>14:00 - 17:00</td>
+                    <td>18:00 - 00:00</td>
+                </tr>
+                <tr>
+                    <td>Sabato</td>
+                    <td>9:00 - 13:00</td>
+                    <td>14:00 - 17:00</td>
+                    <td>18:00 - 00:00</td>
+                </tr>
+                <tr>
+                    <td>Domenica</td>
+                    <td>9:00 - 13:00</td>
+                    <td>14:00 - 17:00</td>
+                    <td>18:00 - 00:00</td>
+                </tr>
+            </tbody>
+            </table>
+        </section>
+        <!--inizio sezione del modulo di contatto-->
+        <section>
+            <h2>Contattami</h2>
+            <!--inizio modulo-->
+            <form action="/invia" method="post">
+                <!--campo per inserire il nome-->
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required> <!--campo obbligatorio-->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required> <!--campo obbligatorio-->
+
+                <!--pulsante per inviare il modulo-->
+                <input type="submit" value="Invia">
+            </form>
+        </section>
+        
+    </body>
+</html>
