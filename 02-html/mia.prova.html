@@ -1,4 +1,4 @@
-<<!DOCTYPE html>  <!--dichiara il tipo di documento html-->
+<!DOCTYPE html>  <!--dichiara il tipo di documento html-->
 <html lang="it"> <!--Indica che il documento è in italiano-->
     <head> <!--inizio della sezione head(intestazione non visibiole della pagina)-->
         <meta charset="utf-8"> <!-- Imposta la codifica dei caratteri per supportare lettere accentate-->
@@ -58,6 +58,7 @@
             width: 100%;  /*larghezza piena*/
             border-collapse: collapse;  /*unisce i bordi delle celle*/
             margin-top: 10px;   /*spazio sopra la tabella*/
+            margin:auto;   /*centra la tabella nella pagina*/
            }
            /*STILE PER LE CELLE DELLA TABELLA*/
            th{
@@ -188,6 +189,42 @@
                 <input type="submit" value="Invia">
             </form>
         </section>
-        
+        <section>
+            <h2>Esempi di comandi HTML</h2>
+            <!--TITOLI DA H1 A H6-->
+            <h1>Titolo h1</h1>
+            <h2>Titolo h2</h2>
+            <h3>Titolo h3</h3>
+            <h4>Titolo h4</h4>
+            <h5>Titolo h5</h5>
+            <h6>Titolo h6</h6>
+            
+        <p>Questo è un paragrafo con <strong>testo in grasseto</strong>, <em>corsivo</em>, e <u>sottolineato</u>.</p> <!--testo con stili-->
+        <p>Testo con <mark>evidenzizione</mark> e un <small>testo piccolo</small>.</p>  <!--evidenziato e piccolo-->
+        <p>Questo è un <abbr title="HyperText Markup Language">HTML</abbr> abbreviato.</p> <!--abbreviazione con tooltip-->
+
+        <!--LISTE-->
+        <h3>LISTA ORDINATA (lista numerata)</h3>
+        <ol>
+            <li>Primo</li>
+            <li>Secondo</li>
+            <li>Terzo</li>
+        </ol>
+        <h3>LISTA NON ORDINATA (lista a punti)</h3>
+        <ul>
+            <li>Pane</li>
+            <li>Latte</li>
+            <li>Uova</li>
+        </ul>
+        <h3>LISTA DESCRITTIVA (lista con termini e descrizioni)</h3>
+        <dl>
+            <dt>HTML</dt> <!--Termine-->
+            <dd>Linguaggio di markup per il web.</dd>
+            <dt>CSS</dt>
+            <dd>Stile per le pagine web.</dd>
+        </dl>
+
+
+    </section>  
     </body>
 </html>
